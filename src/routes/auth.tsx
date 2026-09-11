@@ -1,7 +1,7 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
-import { supabase } from "@/integrations/supabase/client";
+import { isSupabaseConfigured, supabase } from "@/integrations/supabase/client";
 
 export const Route = createFileRoute("/auth")({
   head: () => ({
@@ -29,6 +29,8 @@ function Auth() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    if (!isSupabaseConfigured()) return;
+
     supabase.auth.getSession().then(({ data }) => {
       if (data.session) navigate({ to: "/admin" });
     });
@@ -36,6 +38,10 @@ function Auth() {
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
+    if (!isSupabaseConfigured()) {
+      toast.error("Área administrativa indisponível até conectar o Supabase.");
+      return;
+    }
     setLoading(true);
     if (mode === "entrar") {
       const { error } = await supabase.auth.signInWithPassword({ email, password });
@@ -67,6 +73,12 @@ function Auth() {
         <Link to="/" className="eyebrow">
           ← Voltar ao site
         </Link>
+        {!isSupabaseConfigured() && (
+          <div className="mt-8 border border-border bg-sand/60 p-5 text-sm leading-relaxed text-muted-foreground">
+            A área administrativa precisa do Supabase conectado para liberar login e gestão de
+            agendamentos.
+          </div>
+        )}
         <h1 className="mt-8 font-display text-4xl">
           {mode === "entrar" ? "Acessar agenda" : "Criar acesso"}
         </h1>

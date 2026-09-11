@@ -5,7 +5,7 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 import { Reveal } from "@/components/site/Reveal";
-import { supabase } from "@/integrations/supabase/client";
+import { isSupabaseConfigured, supabase } from "@/integrations/supabase/client";
 import { useServices, useAvailableSlots, type Service } from "@/lib/booking";
 import {
   SITE,
@@ -75,24 +75,31 @@ function Agendar() {
       return;
     }
     setSending(true);
-    const { error } = await supabase.from("appointments").insert({
-      client_name: name.trim(),
-      whatsapp: whatsapp.trim(),
-      email: email.trim() || null,
-      service_id: service.id,
-      service_name: service.name,
-      appointment_date: date,
-      appointment_time: time,
-      notes: notes.trim() || null,
-    });
-    setSending(false);
 
-    if (error) {
-      toast.error("Este horário acabou de ser reservado. Escolha outro, por favor.");
-      setTime(null);
-      slots.refetch();
-      return;
+    if (isSupabaseConfigured()) {
+      const { error } = await supabase.from("appointments").insert({
+        client_name: name.trim(),
+        whatsapp: whatsapp.trim(),
+        email: email.trim() || null,
+        service_id: service.id,
+        service_name: service.name,
+        appointment_date: date,
+        appointment_time: time,
+        notes: notes.trim() || null,
+      });
+      setSending(false);
+
+      if (error) {
+        toast.error("Este horário acabou de ser reservado. Escolha outro, por favor.");
+        setTime(null);
+        slots.refetch();
+        return;
+      }
+    } else {
+      setSending(false);
+      toast.success("Pedido preparado. Finalize a confirmação pelo WhatsApp.");
     }
+
     setDone({ date, time, service: service.name });
   }
 

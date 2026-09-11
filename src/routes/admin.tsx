@@ -2,7 +2,7 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
-import { supabase } from "@/integrations/supabase/client";
+import { isSupabaseConfigured, supabase } from "@/integrations/supabase/client";
 import {
   formatLongDate,
   formatShortDate,
@@ -55,6 +55,8 @@ function Admin() {
   const [blockDate, setBlockDate] = useState("");
 
   useEffect(() => {
+    if (!isSupabaseConfigured()) return;
+
     let active = true;
     supabase.auth.getSession().then(async ({ data }) => {
       if (!active) return;
@@ -136,6 +138,23 @@ function Admin() {
   async function removeBlock(id: string) {
     await supabase.from("blocked_slots").delete().eq("id", id);
     qc.invalidateQueries({ queryKey: ["blocked_slots"] });
+  }
+
+  if (!isSupabaseConfigured()) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-background px-6">
+        <div className="max-w-md text-center">
+          <Link to="/" className="eyebrow">
+            ← Voltar ao site
+          </Link>
+          <h1 className="mt-8 font-display text-4xl">Agenda indisponível</h1>
+          <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+            A área administrativa precisa do Supabase conectado para carregar e gerenciar os
+            agendamentos.
+          </p>
+        </div>
+      </div>
+    );
   }
 
   if (!ready) {

@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { supabase } from "@/integrations/supabase/client";
+import { isSupabaseConfigured, supabase } from "@/integrations/supabase/client";
 
 export type Service = {
   id: string;
@@ -27,10 +27,53 @@ export type BlockedSlot = {
   reason: string | null;
 };
 
+export const FALLBACK_SERVICES: Service[] = [
+  {
+    id: "alongamento-de-unhas",
+    name: "Alongamento de unhas",
+    description: "Resultado natural, resistente e elegante.",
+    duration_minutes: 120,
+    price: null,
+    active: true,
+    sort_order: 1,
+  },
+  {
+    id: "banho-de-gel",
+    name: "Banho de gel",
+    description: "Proteção e fortalecimento das unhas naturais.",
+    duration_minutes: 90,
+    price: null,
+    active: true,
+    sort_order: 2,
+  },
+  {
+    id: "manutencao",
+    name: "Manutenção",
+    description: "Cuidado periódico para preservar o acabamento e a resistência.",
+    duration_minutes: 90,
+    price: null,
+    active: true,
+    sort_order: 3,
+  },
+  {
+    id: "esmaltacao-em-gel",
+    name: "Esmaltação em gel",
+    description: "Finalização duradoura, delicada e com brilho.",
+    duration_minutes: 60,
+    price: null,
+    active: true,
+    sort_order: 4,
+  },
+];
+
+const FALLBACK_SLOTS = ["09:00:00", "10:30:00", "13:30:00", "15:00:00", "16:30:00"];
+
 export function useServices() {
   return useQuery({
     queryKey: ["services"],
     queryFn: async (): Promise<Service[]> => {
+      if (!isSupabaseConfigured()) return FALLBACK_SERVICES;
+
       const { data, error } = await supabase
         .from("services")
         .select("id,name,description,duration_minutes,price,active,sort_order")
@@ -47,6 +90,8 @@ export function useAvailableSlots(date: string | null) {
     queryKey: ["available-slots", date],
     enabled: !!date,
     queryFn: async (): Promise<string[]> => {
+      if (!isSupabaseConfigured()) return FALLBACK_SLOTS;
+
       const { data, error } = await supabase.rpc("available_slots", { _date: date! });
       if (error) throw error;
       return (data ?? []).map((r: { slot: string }) => r.slot);
