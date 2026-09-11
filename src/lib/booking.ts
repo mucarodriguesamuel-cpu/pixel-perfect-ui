@@ -11,6 +11,22 @@ export type Service = {
   sort_order: number;
 };
 
+export type BusinessHour = {
+  id: string;
+  weekday: number;
+  is_open: boolean;
+  start_time: string;
+  end_time: string;
+  slot_minutes: number;
+};
+
+export type BlockedSlot = {
+  id: string;
+  block_date: string;
+  block_time: string | null;
+  reason: string | null;
+};
+
 export function useServices() {
   return useQuery({
     queryKey: ["services"],
@@ -34,6 +50,36 @@ export function useAvailableSlots(date: string | null) {
       const { data, error } = await supabase.rpc("available_slots", { _date: date! });
       if (error) throw error;
       return (data ?? []).map((r: { slot: string }) => r.slot);
+    },
+  });
+}
+
+export function useBusinessHours() {
+  return useQuery({
+    queryKey: ["business-hours"],
+    queryFn: async (): Promise<BusinessHour[]> => {
+      const { data, error } = await supabase
+        .from("business_hours")
+        .select("id,weekday,is_open,start_time,end_time,slot_minutes")
+        .order("weekday");
+      if (error) throw error;
+      return (data ?? []) as BusinessHour[];
+    },
+  });
+}
+
+export function useBlockedSlots(from?: string) {
+  return useQuery({
+    queryKey: ["blocked-slots", from ?? "all"],
+    queryFn: async (): Promise<BlockedSlot[]> => {
+      let q = supabase
+        .from("blocked_slots")
+        .select("id,block_date,block_time,reason")
+        .order("block_date");
+      if (from) q = q.gte("block_date", from);
+      const { data, error } = await q;
+      if (error) throw error;
+      return (data ?? []) as BlockedSlot[];
     },
   });
 }

@@ -12,7 +12,9 @@ import estudioImg from "@/assets/estudio.jpg";
 import p1 from "@/assets/portfolio-1.jpg";
 import p2 from "@/assets/portfolio-2.jpg";
 import p3 from "@/assets/portfolio-3.jpg";
+import p4 from "@/assets/portfolio-4.jpg";
 import p5 from "@/assets/portfolio-5.jpg";
+import p6 from "@/assets/portfolio-6.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -40,21 +42,24 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-const DESTAQUES = [
-  {
-    title: "Aparência natural",
-    text: "Formato e espessura pensados para acompanhar as suas mãos.",
-  },
-  { title: "Resistência", text: "Estrutura firme para durar na sua rotina real." },
-  { title: "Acabamento delicado", text: "Bordas limpas, brilho uniforme e cutícula respeitada." },
-  { title: "Atendimento personalizado", text: "Um horário por vez, do jeito que você precisa." },
+const PILARES = [
+  { title: "Atendimento em estúdio" },
+  { title: "Acabamento delicado" },
+  { title: "Resultado natural" },
 ];
 
-const EXPERIENCIA = [
-  "Atendimento personalizado",
-  "Horário agendado",
-  "Ambiente acolhedor",
-  "Atenção aos detalhes",
+const SERVICO_IMAGENS: Record<string, string> = {
+  "Alongamento de unhas": p3,
+  "Banho de gel": p2,
+  "Manutenção": p1,
+  "Esmaltação em gel": p5,
+};
+
+const SERVICO_FALLBACK = [
+  { name: "Alongamento de unhas", description: "Resultado natural, resistente e elegante." },
+  { name: "Banho de gel", description: "Proteção e fortalecimento das unhas naturais." },
+  { name: "Manutenção", description: "Cuidado periódico para preservar o acabamento e a resistência." },
+  { name: "Esmaltação em gel", description: "Finalização duradoura, delicada e com brilho." },
 ];
 
 function Home() {
