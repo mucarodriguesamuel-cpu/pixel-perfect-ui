@@ -1,3 +1,4 @@
+import * as React from "react";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 
 export function Reveal({
@@ -32,14 +33,15 @@ export function Reveal({
     return () => io.disconnect();
   }, []);
 
+  const Comp = Tag as unknown as React.ElementType;
+
   return (
-    // @ts-expect-error dynamic tag
-    <Tag
-      ref={ref}
+    <Comp
+      ref={ref as React.Ref<never>}
       style={{ transitionDelay: `${delay}ms` }}
       className={`reveal ${shown ? "reveal-in" : ""} ${className}`}
     >
       {children}
-    </Tag>
+    </Comp>
   );
 }

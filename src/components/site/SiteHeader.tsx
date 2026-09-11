@@ -49,7 +49,7 @@ export function SiteHeader() {
             <Link
               key={item.label}
               to={item.to}
-              hash={item.hash}
+              {...(item.hash ? { hash: item.hash } : {})}
               className="text-[0.7rem] tracking-[0.2em] text-foreground/70 uppercase transition-colors duration-300 hover:text-foreground"
             >
               {item.label}
@@ -86,7 +86,7 @@ export function SiteHeader() {
             <Link
               key={item.label}
               to={item.to}
-              hash={item.hash}
+              {...(item.hash ? { hash: item.hash } : {})}
               onClick={() => setOpen(false)}
               className="border-b border-border/50 py-5 font-display text-2xl"
             >
