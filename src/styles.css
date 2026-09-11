@@ -61,13 +61,13 @@
 :root {
   --radius: 0.125rem;
 
-  --background: #211815;
-  --foreground: oklch(0.28 0.024 52);
+ --background: #E8DDD4;
+--foreground: #2A211E;
 
-  --card: oklch(0.985 0.006 84);
-  --card-foreground: oklch(0.28 0.024 52);
-  --popover: oklch(0.985 0.006 84);
-  --popover-foreground: oklch(0.28 0.024 52);
+--card: #F3EAE3;
+--card-foreground: #2A211E;
+--popover: #F3EAE3;
+--popover-foreground: #2A211E;
 
   --primary: oklch(0.31 0.031 48);
   --primary-foreground: oklch(0.972 0.008 84);
