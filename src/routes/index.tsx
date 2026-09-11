@@ -47,7 +47,31 @@ const PILARES = [
   { title: "Acabamento delicado" },
   { title: "Resultado natural" },
 ];
+const DESTAQUES = [
+  {
+    title: "Aparência natural",
+    text: "Alongamentos pensados para valorizar o formato das mãos com resultado delicado.",
+  },
+  {
+    title: "Resistência",
+    text: "Beleza e durabilidade para o dia a dia.",
+  },
+  {
+    title: "Acabamento delicado",
+    text: "Cuidado em cada detalhe para um resultado elegante.",
+  },
+  {
+    title: "Atendimento personalizado",
+    text: "Cada atendimento é pensado para o estilo de cada cliente.",
+  },
+];
 
+const EXPERIENCIA = [
+  "Atendimento personalizado",
+  "Horário agendado",
+  "Ambiente acolhedor",
+  "Atenção aos detalhes",
+];
 const SERVICO_IMAGENS: Record<string, string> = {
   "Alongamento de unhas": p3,
   "Banho de gel": p2,
