@@ -273,7 +273,27 @@ function Home() {
             </div>
           </div>
         </section>
+{/* MISSÃO E VALORES */}
+<section className="border-y border-border bg-background">
+  <div className="mx-auto grid max-w-[1200px] gap-12 px-6 py-20 md:grid-cols-2 md:px-10 md:py-28">
+    <Reveal>
+      <p className="eyebrow">Missão</p>
+      <h2 className="mt-5 font-display text-3xl leading-tight md:text-4xl">
+        Valorizar a beleza das mãos com naturalidade.
+      </h2>
+      <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+        Unir técnica, resistência e cuidado para criar resultados que respeitem o estilo e a individualidade de cada cliente.
+      </p>
+    </Reveal>
 
+    <Reveal delay={120}>
+      <p className="eyebrow">Valores</p>
+      <p className="mt-5 font-display text-2xl leading-relaxed">
+        Naturalidade · Técnica · Cuidado · Atenção aos detalhes · Atendimento personalizado
+      </p>
+    </Reveal>
+  </div>
+</section>
         {/* PORTFÓLIO */}
         <section id="portfolio" className="scroll-mt-24">
           <div className="mx-auto max-w-[1400px] px-6 py-24 md:px-10 md:py-36">
