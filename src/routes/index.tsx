@@ -167,22 +167,59 @@ function Home() {
           </div>
         </section>
 
-        {/* FRASE DE IMPACTO */}
-        <section className="bg-sand">
-          <div className="mx-auto max-w-[1100px] px-6 py-24 md:px-10 md:py-40">
-            <Reveal>
-              <span className="hairline w-20" />
-              <blockquote className="mt-10 font-display text-[clamp(1.9rem,4.6vw,3.6rem)] leading-[1.15] italic">
-                “O melhor alongamento é aquele que ninguém percebe que é alongamento.”
-              </blockquote>
-              <p className="mt-10 max-w-xl text-sm leading-relaxed text-muted-foreground">
-                A proposta do trabalho é unir resistência, delicadeza e naturalidade em cada
-                detalhe.
-              </p>
-            </Reveal>
-          </div>
-        </section>
+   {/* SOBRE DÉBORA */}
+<section id="sobre" className="scroll-mt-24 bg-sand">
+  <div className="mx-auto grid max-w-[1400px] gap-14 px-6 py-24 md:px-10 md:py-36 lg:grid-cols-[0.7fr_1.3fr] lg:gap-24">
+    <Reveal>
+      <div className="lg:sticky lg:top-32">
+        <p className="eyebrow">Sobre Débora</p>
+        <p className="mt-8 font-display text-[clamp(5rem,12vw,9rem)] leading-none text-gold/70">
+          16
+        </p>
+        <p className="mt-3 text-xs tracking-[0.25em] uppercase text-muted-foreground">
+          anos de experiência
+        </p>
+      </div>
+    </Reveal>
 
+    <Reveal delay={120}>
+      <div className="max-w-3xl">
+        <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.02]">
+          16 anos dedicados à arte de transformar unhas.
+        </h2>
+
+        <div className="mt-10 space-y-6 text-[0.98rem] leading-[1.9] text-muted-foreground">
+          <p>
+            Há 16 anos, comecei minha trajetória no universo das unhas. Ao longo desse tempo,
+            meu trabalho foi sendo aperfeiçoado através da prática, do estudo e, principalmente,
+            da observação de cada tipo de unha e das necessidades de cada cliente.
+          </p>
+
+          <p>
+            Com o passar dos anos, percebi que meu trabalho não deveria estar simplesmente
+            relacionado a deixar as unhas mais longas. Eu queria desenvolver uma técnica em que
+            o alongamento pudesse ser bonito, estruturado e resistente, mas sem perder a delicadeza.
+          </p>
+
+          <p>
+            Foi assim que minha forma de trabalhar foi se tornando cada vez mais voltada para
+            aquilo que hoje chamo de <strong className="font-normal text-foreground">Técnica da Naturalidade</strong>.
+          </p>
+
+          <p>
+            Uma construção pensada para respeitar o formato das mãos, a estrutura das unhas e
+            a proporção de cada cliente.
+          </p>
+        </div>
+
+        <blockquote className="mt-12 border-l border-gold pl-7 font-display text-2xl italic leading-relaxed md:text-3xl">
+          Porque uma unha bem feita não precisa chamar atenção pelo excesso.
+          Ela chama atenção pela qualidade do acabamento.
+        </blockquote>
+      </div>
+    </Reveal>
+  </div>
+</section>
         {/* SERVIÇOS — menu editorial */}
         <section id="servicos" className="scroll-mt-24">
           <div className="mx-auto grid max-w-[1400px] gap-12 px-6 py-24 md:px-10 md:py-32 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
