@@ -28,6 +28,7 @@ export const Route = createFileRoute("/portfolio")({
       },
       { property: "og:type", content: "article" },
       { property: "og:url", content: "/portfolio" },
+       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/portfolio" }],
   }),
