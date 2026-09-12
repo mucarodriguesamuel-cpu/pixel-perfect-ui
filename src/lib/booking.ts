@@ -30,7 +30,7 @@ export type BlockedSlot = {
 export const FALLBACK_SERVICES: Service[] = [
   {
     id: "alongamento-de-unhas",
-    name: "Alongamento de unhas",
+    name: "Alongamento em gel",
     description:
       "Alongamentos personalizados que respeitam o formato das mãos e priorizam uma aparência natural, elegante e resistente.",
     duration_minutes: 120,
