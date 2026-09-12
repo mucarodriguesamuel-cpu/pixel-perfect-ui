@@ -24,7 +24,7 @@ export const Route = createFileRoute("/portfolio")({
       {
         property: "og:description",
         content:
-          "Trabalhos de alongamento natural, resistente e elegante em Vila Mariana, São Paulo.",
+          "Trabalhos de alongamento natural, resistente e elegante no Ipiranga, São Paulo.",
       },
       { property: "og:type", content: "article" },
       { property: "og:url", content: "/portfolio" },
