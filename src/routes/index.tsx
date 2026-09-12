@@ -710,48 +710,79 @@ function Home() {
           </div>
         </section>
 
-        {/* EXPERIÊNCIA NO ESTÚDIO */}
-        <section id="estudio" className="scroll-mt-24 bg-espresso text-espresso-foreground">
-          <div className="mx-auto grid max-w-[1400px] gap-14 px-6 py-24 md:px-10 md:py-36 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-20">
-            <Reveal>
-              <img
-                src={estudioImg}
-               alt="Trabalho de nail design realizado por Débora Tonani"
-                loading="lazy"
-                width={1408}
-                height={1008}
-                className="h-[40vh] w-full object-cover md:h-[62vh]"
-              />
-            </Reveal>
-            <Reveal delay={150}>
-              <p className="eyebrow text-espresso-foreground/50">Experiência</p>
-              <h2 className="mt-6 font-display text-[clamp(2.1rem,4.6vw,3.6rem)] leading-[1.08]">
-                Uma experiência pensada para você
-              </h2>
-              <p className="mt-7 max-w-lg text-sm leading-relaxed text-espresso-foreground/70">
-                Cada atendimento é realizado com atenção, calma e cuidado para que o resultado final
-                combine com seu estilo e sua rotina.
-              </p>
-              <ul className="mt-12">
-                {EXPERIENCIA.map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-center gap-5 border-t border-espresso-foreground/15 py-5 last:border-b"
-                  >
-                    <span className="h-px w-6 bg-gold" />
-                    <span className="text-sm tracking-[0.12em]">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <Link
-                to="/agendar"
-                className="btn-ink mt-12 bg-espresso-foreground text-espresso hover:bg-champagne"
-              >
-                Reservar meu horário
-              </Link>
-            </Reveal>
-          </div>
-        </section>
+    {/* ATENDIMENTO EXCLUSIVO + EXPERIÊNCIA */}
+<section id="experiencia" className="scroll-mt-24 bg-espresso text-espresso-foreground">
+  <div className="mx-auto max-w-[1400px] px-6 py-24 md:px-10 md:py-36">
+    <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
+      <Reveal>
+        <img
+          src={estudioImg}
+          alt="Experiência de atendimento Débora Tonani"
+          loading="lazy"
+          className="h-[55vh] w-full object-cover md:h-[72vh]"
+        />
+      </Reveal>
+
+      <Reveal delay={120}>
+        <p className="eyebrow text-espresso-foreground/50">Atendimento exclusivo</p>
+
+        <h2 className="mt-6 font-display text-[clamp(2.6rem,5vw,4.3rem)] leading-[1.03]">
+          O seu horário é realmente seu.
+        </h2>
+
+        <div className="mt-9 space-y-6 text-[0.98rem] leading-[1.9] text-espresso-foreground/70">
+          <p>
+            Os atendimentos são realizados somente com horário previamente agendado.
+            Cada horário é reservado para uma cliente.
+          </p>
+
+          <p>
+            Isso permite realizar cada procedimento com atenção, tranquilidade e sem
+            a sensação de atendimento em linha de produção.
+          </p>
+
+          <p>
+            Durante seu horário, o foco está em você. Sem pressa, sem atendimento
+            simultâneo e sem excesso de pessoas.
+          </p>
+        </div>
+
+        <div className="mt-10 grid grid-cols-2 gap-x-8 gap-y-5 border-t border-white/15 pt-8">
+          <p>Atendimento individual</p>
+          <p>Horário reservado</p>
+          <p>Ambiente tranquilo</p>
+          <p>Atenção aos detalhes</p>
+        </div>
+      </Reveal>
+    </div>
+
+    <Reveal delay={160}>
+      <div className="mt-24 border-t border-white/15 pt-16 md:mt-32 md:pt-20">
+        <p className="eyebrow text-espresso-foreground/50">
+          A experiência Débora Tonani
+        </p>
+
+        <h3 className="mt-6 max-w-4xl font-display text-[clamp(2.5rem,5vw,4rem)] leading-[1.05]">
+          Mais do que um procedimento.
+        </h3>
+
+        <p className="mt-8 max-w-3xl text-[0.98rem] leading-[1.9] text-espresso-foreground/70">
+          Quero que a cliente perceba a diferença desde o primeiro contato. Do agendamento
+          ao atendimento, tudo deve transmitir organização, cuidado e profissionalismo.
+        </p>
+
+        <p className="mt-6 max-w-3xl text-[0.98rem] leading-[1.9] text-espresso-foreground/70">
+          O ambiente deve ser tranquilo. O atendimento, individualizado. O procedimento,
+          realizado com calma e precisão. E o resultado deve refletir todo esse cuidado.
+        </p>
+
+        <blockquote className="mt-12 max-w-4xl font-display text-2xl italic leading-relaxed md:text-4xl">
+          Porque autocuidado também é escolher com quem você entrega as suas mãos.
+        </blockquote>
+      </div>
+    </Reveal>
+  </div>
+</section>
 
         {/* LOCALIZAÇÃO */}
         <section id="localizacao" className="scroll-mt-24">
