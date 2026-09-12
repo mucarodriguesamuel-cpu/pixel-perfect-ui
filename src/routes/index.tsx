@@ -594,6 +594,64 @@ function Home() {
     </Reveal>
   </div>
 </section>
+        {/* O MEU DIFERENCIAL */}
+<section className="bg-espresso text-espresso-foreground">
+  <div className="mx-auto max-w-[1300px] px-6 py-24 md:px-10 md:py-36">
+    <Reveal>
+      <p className="eyebrow">O meu diferencial</p>
+
+      <div className="mt-8 grid gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-24">
+        <div>
+          <h2 className="font-display text-[clamp(2.7rem,5.5vw,4.8rem)] leading-[1.02]">
+            Experiência não é apenas tempo.
+            <br />
+            É tudo o que se aprende durante ele.
+          </h2>
+
+          <p className="mt-9 max-w-2xl text-[0.98rem] leading-[1.9] opacity-75">
+            São 16 anos trabalhando com unhas. Nesse período, aprendi que cada mão é
+            diferente, cada unha possui uma estrutura e cada mulher tem uma rotina.
+          </p>
+
+          <p className="mt-6 max-w-2xl text-[0.98rem] leading-[1.9] opacity-75">
+            Por isso, meu diferencial não está apenas no alongamento. Está na maneira
+            como observo, planejo e adapto cada construção para cada cliente.
+          </p>
+        </div>
+
+        <div className="border-t border-white/20 pt-8">
+          <p className="text-xs tracking-[0.25em] uppercase opacity-60">
+            O que busco entregar
+          </p>
+
+          <div className="mt-8 space-y-0">
+            {[
+              "Bem estruturadas",
+              "Proporcionais",
+              "Leves",
+              "Resistentes",
+              "Elegantes",
+            ].map((item, i) => (
+              <div
+                key={item}
+                className="flex items-center gap-5 border-b border-white/15 py-5"
+              >
+                <span className="text-xs opacity-50">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <p className="font-display text-2xl">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <p className="mt-16 max-w-4xl font-display text-2xl italic leading-relaxed md:text-3xl">
+        Não sigo simplesmente um padrão pronto. A técnica é adaptada para cada cliente.
+      </p>
+    </Reveal>
+  </div>
+</section>
         {/* PORTFÓLIO */}
         <section id="portfolio" className="scroll-mt-24">
           <div className="mx-auto max-w-[1400px] px-6 py-24 md:px-10 md:py-36">
