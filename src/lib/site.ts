@@ -1,9 +1,8 @@
 export const SITE = {
   name: "Débora Tonani",
   role: "Nail Designer",
-  city: "Vila Mariana — São Paulo",
-  neighborhood: "Vila Mariana",
-  cityShort: "São Paulo",
+city: "Ipiranga — São Paulo",
+  neighborhood: "Ipiranga",
   whatsappNumber: "5511930089735",
   whatsappDisplay: "(11) 93008-9735",
 instagramUrl: "https://www.instagram.com/unhadegel.sp/",
