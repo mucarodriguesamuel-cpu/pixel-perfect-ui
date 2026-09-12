@@ -252,13 +252,12 @@ function Home() {
               <Reveal delay={200}>
                 <div className="relative z-10 -mt-12 ml-auto max-w-xl bg-background px-7 py-10 md:-mt-24 md:px-14 md:py-16 lg:absolute lg:right-0 lg:bottom-[-3rem] lg:mt-0 lg:max-w-lg">
                   <span className="hairline w-16" />
-                  <h2 className="mt-7 font-display text-[clamp(2rem,4.2vw,3.2rem)] leading-[1.08]">
-                    Naturalidade que faz a diferença
-                  </h2>
-                  <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
-                    O foco do trabalho é criar alongamentos que acompanhem o formato das mãos e
-                    mantenham uma aparência elegante, delicada e natural.
-                  </p>
+                <h2 className="mt-7 font-display text-[clamp(2rem,4.2vw,3.2rem)] leading-[1.08]">
+  Naturalidade não acontece por acaso.
+</h2>
+<p className="mt-6 text-sm leading-relaxed text-muted-foreground">
+  São 16 anos aperfeiçoando técnica, proporção e acabamento para criar unhas que combinam com cada cliente. O objetivo não é simplesmente alongar, mas valorizar as mãos com um resultado bonito, resistente e principalmente natural.
+</p>
                   <dl className="mt-10 grid gap-x-8 gap-y-7 sm:grid-cols-2">
                     {DESTAQUES.map((d) => (
                       <div key={d.title}>
