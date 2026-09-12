@@ -76,14 +76,14 @@ const SERVICO_IMAGENS: Record<string, string> = {
   "Alongamento de unhas": p3,
   "Banho de gel": p2,
   "Manutenção": p1,
-  "Esmaltação em gel": p5,
+  "Blindagem": p5,
 };
 
 const SERVICO_FALLBACK = [
   { name: "Alongamento de unhas", description: "Resultado natural, resistente e elegante." },
   { name: "Banho de gel", description: "Proteção e fortalecimento das unhas naturais." },
-  { name: "Manutenção", description: "Cuidado periódico para preservar o acabamento e a resistência." },
-  { name: "Esmaltação em gel", description: "Finalização duradoura, delicada e com brilho." },
+  { name: "Manutenção", description: "Cuidado periódico recomendado a cada 25 a 30 dias." },
+  { name: "Blindagem", description: "Proteção e fortalecimento da unha natural." },
 ];
 
 function Home() {
