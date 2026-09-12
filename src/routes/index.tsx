@@ -502,6 +502,56 @@ function Home() {
     </Reveal>
   </div>
 </section>
+        {/* ESMALTAÇÃO EM GEL */}
+<section className="bg-sand">
+  <div className="mx-auto max-w-[1200px] px-6 py-24 md:px-10 md:py-36">
+    <Reveal>
+      <p className="eyebrow">Esmaltação em gel</p>
+
+      <h2 className="mt-6 max-w-4xl font-display text-[clamp(2.5rem,5vw,4.3rem)] leading-[1.03]">
+        Uma decisão baseada em experiência e cuidado.
+      </h2>
+
+      <div className="mt-12 grid gap-12 lg:grid-cols-2 lg:gap-20">
+        <div className="space-y-6 text-[0.98rem] leading-[1.9] text-muted-foreground">
+          <p>
+            Nas mãos, atualmente não ofereço a esmaltação em gel como procedimento isolado.
+            Essa é uma escolha construída ao longo dos meus anos de experiência profissional.
+          </p>
+
+          <p>
+            Procedimentos frequentes de aplicação e remoção sobre a unha natural exigem
+            atenção e técnica para evitar desgastes desnecessários da superfície.
+          </p>
+
+          <p>
+            Por isso, minha prioridade é trabalhar pensando não apenas na aparência imediata,
+            mas também no cuidado com a estrutura natural das unhas ao longo do tempo.
+          </p>
+        </div>
+
+        <div className="border-l border-gold/50 pl-8 md:pl-12">
+          <p className="eyebrow">Como funciona</p>
+
+          <p className="mt-7 font-display text-2xl leading-relaxed md:text-3xl">
+            A esmaltação em gel pode ser realizada como complemento do alongamento,
+            da manutenção ou do banho de gel.
+          </p>
+
+          <p className="mt-7 text-sm leading-[1.9] text-muted-foreground">
+            Dessa forma, ela faz parte de uma estrutura de trabalho pensada para unir
+            acabamento, resistência e cuidado com a unha natural.
+          </p>
+
+          <p className="mt-9 font-display text-xl italic leading-relaxed">
+            Não é sobre fazer mais procedimentos. É sobre fazer aquilo que considero
+            mais coerente com a forma como cuido das unhas das minhas clientes.
+          </p>
+        </div>
+      </div>
+    </Reveal>
+  </div>
+</section>
         {/* PORTFÓLIO */}
         <section id="portfolio" className="scroll-mt-24">
           <div className="mx-auto max-w-[1400px] px-6 py-24 md:px-10 md:py-36">
