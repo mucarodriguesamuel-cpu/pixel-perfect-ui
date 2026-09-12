@@ -14,7 +14,7 @@ import hero from "@/assets/hero-maos.jpg";
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
     meta: [
-      { title: "Portfólio — Débora Tonani Nail Designer | Vila Mariana" },
+     { title: "Portfólio — Débora Tonani Nail Designer | Ipiranga" },
       {
         name: "description",
         content:
