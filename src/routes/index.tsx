@@ -894,6 +894,72 @@ function Home() {
             </Reveal>
           </div>
         </section>
+        {/* CONTATO + FINAL */}
+<section id="contato" className="scroll-mt-24 bg-sand">
+  <div className="mx-auto max-w-[1200px] px-6 py-24 text-center md:px-10 md:py-36">
+    <Reveal>
+      <p className="eyebrow">Contato</p>
+
+      <h2 className="mt-6 font-display text-[clamp(3rem,6vw,5.5rem)] leading-[0.98]">
+        Vamos cuidar das suas unhas?
+      </h2>
+
+      <p className="mx-auto mt-8 max-w-2xl text-[0.98rem] leading-[1.9] text-muted-foreground">
+        Se você busca experiência, técnica, naturalidade e atenção aos detalhes,
+        será um prazer cuidar das suas unhas.
+      </p>
+
+      <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <a
+          href={`https://wa.me/${SITE.whatsappNumber}?text=${encodeURIComponent(
+            "Olá, Débora! Vim pelo site e gostaria de agendar meu horário."
+          )}`}
+          target="_blank"
+          rel="noreferrer"
+          className="btn-ink"
+        >
+          Falar pelo WhatsApp
+        </a>
+
+        <a
+          href={SITE.instagramUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="btn-outline-ink"
+        >
+          {SITE.instagramLabel}
+        </a>
+      </div>
+    </Reveal>
+  </div>
+</section>
+
+{/* FRASE FINAL */}
+<section className="bg-espresso text-espresso-foreground">
+  <div className="mx-auto max-w-[1100px] px-6 py-24 text-center md:px-10 md:py-36">
+    <Reveal>
+      <p className="font-display text-[clamp(2.8rem,6vw,5rem)] leading-[1.05]">
+        Não faço apenas unhas.
+        <br />
+        Cuido de detalhes que fazem uma mulher se sentir ainda mais bonita.
+      </p>
+
+      <div className="mt-12">
+        <p className="font-display text-2xl">Débora Tonani</p>
+        <p className="mt-3 text-xs tracking-[0.22em] uppercase text-espresso-foreground/60">
+          Especialista em alongamento de unhas há 16 anos
+        </p>
+      </div>
+
+      <Link
+        to="/agendar"
+        className="btn-ink mt-10 bg-espresso-foreground text-espresso hover:bg-champagne"
+      >
+        Agendar meu horário
+      </Link>
+    </Reveal>
+  </div>
+</section>
       </main>
       <SiteFooter />
       <WhatsAppButton />
