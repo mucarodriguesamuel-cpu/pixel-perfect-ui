@@ -56,8 +56,8 @@ function Portfolio() {
               Trabalhos que falam por si
             </h1>
             <p className="mt-8 max-w-lg text-sm leading-relaxed text-muted-foreground">
-              Alongamentos, banho de gel e esmaltação em gel com acabamento discreto — pensados para
-              parecerem suas próprias unhas, só que melhores.
+Alongamentos, banho de gel, manutenção e blindagem com acabamento delicado — pensados para
+valorizar suas mãos com naturalidade.
             </p>
             <span className="hairline mt-10 w-24" />
           </Reveal>
