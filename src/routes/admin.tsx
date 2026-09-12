@@ -53,7 +53,7 @@ function Admin() {
   const [ready, setReady] = useState(false);
   const [filter, setFilter] = useState<"proximos" | "todos" | Status>("proximos");
   const [blockDate, setBlockDate] = useState("");
-
+const [blockTime, setBlockTime] = useState("");
   useEffect(() => {
     if (!isSupabaseConfigured()) return;
 
