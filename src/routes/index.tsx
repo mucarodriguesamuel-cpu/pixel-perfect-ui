@@ -23,7 +23,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Alongamentos naturais, elegantes e resistentes. Débora Tonani, nail designer em Vila Mariana, São Paulo. Banho de gel, manutenção e esmaltação em gel com horário agendado.",
+          "Alongamentos naturais, banho de gel, manutenção e blindagem com Débora Tonani, nail designer em Vila Mariana, São Paulo, há 16 anos.",
       },
       {
         property: "og:title",
