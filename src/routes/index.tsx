@@ -241,7 +241,7 @@ function Home() {
               <Reveal>
                 <img
                   src={especialidadeImg}
-                  alt="Nail designer aplicando gel em alongamento de unha com acabamento natural"
+                alt="Trabalho de unhas com acabamento natural realizado por Débora Tonani"
                   loading="lazy"
                   width={1408}
                   height={1008}
