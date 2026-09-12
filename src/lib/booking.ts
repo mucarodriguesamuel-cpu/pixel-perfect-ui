@@ -31,7 +31,8 @@ export const FALLBACK_SERVICES: Service[] = [
   {
     id: "alongamento-de-unhas",
     name: "Alongamento de unhas",
-    description: "Resultado natural, resistente e elegante.",
+    description:
+      "Alongamentos personalizados que respeitam o formato das mãos e priorizam uma aparência natural, elegante e resistente.",
     duration_minutes: 120,
     price: null,
     active: true,
@@ -40,7 +41,8 @@ export const FALLBACK_SERVICES: Service[] = [
   {
     id: "banho-de-gel",
     name: "Banho de gel",
-    description: "Proteção e fortalecimento das unhas naturais.",
+    description:
+      "Uma camada de estrutura e proteção sobre a unha natural, sem necessidade de alongar.",
     duration_minutes: 90,
     price: null,
     active: true,
@@ -49,16 +51,18 @@ export const FALLBACK_SERVICES: Service[] = [
   {
     id: "manutencao",
     name: "Manutenção",
-    description: "Cuidado periódico para preservar o acabamento e a resistência.",
+    description:
+      "Cuidados para preservar a estrutura e o acabamento. Recomendada, em média, a cada 25 a 30 dias.",
     duration_minutes: 90,
     price: null,
     active: true,
     sort_order: 3,
   },
   {
-    id: "esmaltacao-em-gel",
-    name: "Esmaltação em gel",
-    description: "Finalização duradoura, delicada e com brilho.",
+    id: "blindagem",
+    name: "Blindagem",
+    description:
+      "Proteção e fortalecimento da unha natural, mantendo uma aparência delicada e natural.",
     duration_minutes: 60,
     price: null,
     active: true,
