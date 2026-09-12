@@ -801,6 +801,62 @@ function Home() {
     </Reveal>
   </div>
 </section>
+        {/* DÚVIDAS FREQUENTES */}
+<section id="duvidas" className="scroll-mt-24 bg-background">
+  <div className="mx-auto max-w-[1100px] px-6 py-24 md:px-10 md:py-36">
+    <Reveal>
+      <p className="eyebrow">Dúvidas frequentes</p>
+
+      <h2 className="mt-6 max-w-3xl font-display text-[clamp(2.5rem,5vw,4.2rem)] leading-[1.03]">
+        Algumas dúvidas antes do seu atendimento.
+      </h2>
+    </Reveal>
+
+    <Reveal delay={120}>
+      <div className="mt-14 border-t border-border">
+        {[
+          {
+            q: "O alongamento danifica a unha natural?",
+            a: "O cuidado depende da preparação, construção, produtos utilizados, manutenção e remoção correta. Meu trabalho busca respeitar a estrutura natural da unha e evitar desgastes desnecessários.",
+          },
+          {
+            q: "Qual a diferença entre alongamento e banho de gel?",
+            a: "O alongamento cria um novo comprimento. Já o banho de gel é realizado sobre a própria unha natural para oferecer mais estrutura, resistência e acabamento.",
+          },
+          {
+            q: "De quanto em quanto tempo devo fazer manutenção?",
+            a: "A frequência varia de acordo com o crescimento das unhas e com a rotina de cada cliente. A orientação é feita de forma individual.",
+          },
+          {
+            q: "Posso remover o alongamento em casa?",
+            a: "Não é recomendado. A remoção deve ser feita profissionalmente para evitar danos desnecessários à unha natural.",
+          },
+          {
+            q: "Posso fazer somente esmaltação em gel nas mãos?",
+            a: "Atualmente não ofereço esmaltação em gel isoladamente nas mãos. Ela pode ser realizada como complemento do alongamento, da manutenção ou do banho de gel.",
+          },
+          {
+            q: "O atendimento precisa ser agendado?",
+            a: "Sim. Todos os atendimentos são realizados com horário agendado e cada horário é reservado individualmente para uma cliente.",
+          },
+        ].map((item) => (
+          <details key={item.q} className="group border-b border-border py-6">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-8 font-display text-xl md:text-2xl">
+              {item.q}
+              <span className="text-gold transition-transform group-open:rotate-45">
+                +
+              </span>
+            </summary>
+
+            <p className="mt-5 max-w-3xl pr-8 text-sm leading-[1.9] text-muted-foreground">
+              {item.a}
+            </p>
+          </details>
+        ))}
+      </div>
+    </Reveal>
+  </div>
+</section>
 
         {/* LOCALIZAÇÃO */}
         <section id="localizacao" className="scroll-mt-24">
