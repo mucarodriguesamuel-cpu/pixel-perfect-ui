@@ -43,9 +43,9 @@ export const Route = createFileRoute("/")({
 });
 
 const PILARES = [
-  { title: "Atendimento em estúdio" },
-  { title: "Acabamento delicado" },
-  { title: "Resultado natural" },
+  { title: "Naturalidade" },
+  { title: "Técnica" },
+  { title: "Atendimento personalizado" },
 ];
 const DESTAQUES = [
   {
