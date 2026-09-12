@@ -11,7 +11,7 @@ instagramLabel: "@unhadegel.sp",
 } as const;
 
 export function whatsappLink(message: string) {
-  return `https://web.whatsapp.com/send?phone=${SITE.whatsappNumber}&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
+return `https://web.whatsapp.com/send?phone=${SITE.whatsappNumber}&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
 }
 
 export const DEFAULT_WHATSAPP_MESSAGE =
