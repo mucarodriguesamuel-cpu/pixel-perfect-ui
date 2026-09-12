@@ -29,7 +29,7 @@ export const Route = createFileRoute("/agendar")({
       { property: "og:title", content: "Agendar horário — Débora Tonani Nail Designer" },
       {
         property: "og:description",
-        content: "Reserve seu horário de alongamento, banho de gel ou esmaltação em gel.",
+       content: "Reserve seu horário de alongamento, banho de gel, manutenção ou blindagem.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
