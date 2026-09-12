@@ -220,6 +220,64 @@ function Home() {
     </Reveal>
   </div>
 </section>
+        {/* TÉCNICA DA NATURALIDADE */}
+<section id="tecnica" className="scroll-mt-24 bg-background">
+  <div className="mx-auto max-w-[1400px] px-6 py-24 md:px-10 md:py-36">
+    <Reveal>
+      <p className="eyebrow">Técnica da Naturalidade</p>
+      <div className="mt-7 grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-24">
+        <div>
+          <h2 className="font-display text-[clamp(2.5rem,5.5vw,4.8rem)] leading-[1.02]">
+            Quando o alongamento passa a fazer parte da sua mão.
+          </h2>
+
+          <p className="mt-8 max-w-2xl text-[0.98rem] leading-[1.9] text-muted-foreground">
+            A Técnica da Naturalidade é resultado de anos de experiência e aperfeiçoamento.
+            O objetivo é construir uma unha com proporção, estrutura, leveza visual e
+            acabamento refinado.
+          </p>
+
+          <p className="mt-6 max-w-2xl text-[0.98rem] leading-[1.9] text-muted-foreground">
+            Formato, comprimento, curvatura, estrutura e rotina da cliente são considerados
+            antes da construção. Não existe um único formato que funcione da mesma maneira
+            para todas as mulheres.
+          </p>
+
+          <p className="mt-6 max-w-2xl text-[0.98rem] leading-[1.9] text-muted-foreground">
+            Não é simplesmente reproduzir um modelo. É construir uma estrutura que faça
+            sentido para aquela mão.
+          </p>
+        </div>
+
+        <div className="border-t border-gold/50 pt-8 lg:mt-16">
+          <p className="eyebrow">O resultado que buscamos</p>
+
+          <div className="mt-8 grid grid-cols-2 gap-x-8 gap-y-7">
+            {[
+              "Estrutura fina e elegante",
+              "Proporção adequada",
+              "Acabamento delicado",
+              "Resistência",
+              "Conforto",
+              "Harmonia com as mãos",
+              "Aparência sofisticada",
+              "Respeito à unha natural",
+            ].map((item) => (
+              <div key={item} className="border-b border-border pb-5">
+                <p className="font-display text-xl leading-tight">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <p className="mt-16 max-w-4xl font-display text-2xl italic leading-relaxed md:text-4xl">
+        A proposta não é criar uma unha exagerada. É criar uma unha bonita a ponto de
+        parecer que sempre pertenceu àquela mão.
+      </p>
+    </Reveal>
+  </div>
+</section>
         {/* SERVIÇOS — menu editorial */}
         <section id="servicos" className="scroll-mt-24">
           <div className="mx-auto grid max-w-[1400px] gap-12 px-6 py-24 md:px-10 md:py-32 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
