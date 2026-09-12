@@ -11,7 +11,6 @@ import p4 from "@/assets/portfolio-4.jpg";
 import p5 from "@/assets/portfolio-5.jpg";
 import p6 from "@/assets/portfolio-6.jpg";
 import hero from "@/assets/hero-maos.jpg";
-import especialidade from "@/assets/especialidade.jpg";
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
     meta: [
