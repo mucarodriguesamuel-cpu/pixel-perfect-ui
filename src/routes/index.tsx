@@ -49,7 +49,7 @@ function Home() {
       <SiteHeader />
       <main>
         {/* HERO */}
-        <section className="relative min-h-[100svh] overflow-hidden pt-28 md:pt-32">
+        <section id="inicio" className="relative min-h-[100svh] overflow-hidden pt-28 md:pt-32">
           <div className="mx-auto grid max-w-[1400px] items-center gap-12 px-6 pb-16 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 lg:pb-24">
             <div className="lg:pr-10">
               <Reveal>
