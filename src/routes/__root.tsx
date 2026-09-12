@@ -101,7 +101,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@type": ["BeautySalon", "LocalBusiness"],
           name: "Débora Tonani — Nail Designer",
           description:
-            "Alongamento de unhas natural e resistente, banho de gel, manutenção e esmaltação em gel em Vila Mariana, São Paulo.",
+      "Alongamento de unhas natural e resistente, banho de gel, manutenção e blindagem em Vila Mariana, São Paulo.",
           address: {
             "@type": "PostalAddress",
             addressLocality: "Vila Mariana",
@@ -115,7 +115,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             "Alongamento de unhas",
             "Banho de gel",
             "Manutenção",
-            "Esmaltação em gel",
+         "Blindagem",
           ].map((name) => ({
             "@type": "Offer",
             itemOffered: { "@type": "Service", name },
