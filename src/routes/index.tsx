@@ -278,59 +278,61 @@ function Home() {
     </Reveal>
   </div>
 </section>
-        {/* SERVIÇOS — menu editorial */}
-        <section id="servicos" className="scroll-mt-24">
-          <div className="mx-auto grid max-w-[1400px] gap-12 px-6 py-24 md:px-10 md:py-32 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
-            <div className="lg:sticky lg:top-32 lg:self-start">
-              <Reveal>
-                <p className="eyebrow">Menu de serviços</p>
-                <h2 className="mt-6 font-display text-[clamp(2.2rem,5vw,4rem)] leading-[1.05]">
-                  Cada etapa
-                  <br />
-                  com propósito.
-                </h2>
-                <span className="hairline mt-8 w-24" />
-              </Reveal>
-            </div>
+        {/* PROCEDIMENTOS */}
+<section id="procedimentos" className="scroll-mt-24 bg-sand">
+  <div className="mx-auto max-w-[1400px] px-6 py-24 md:px-10 md:py-36">
+    <Reveal>
+      <p className="eyebrow">Procedimentos</p>
+      <h2 className="mt-6 max-w-3xl font-display text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.03]">
+        Cada procedimento começa entendendo o que faz sentido para cada mão.
+      </h2>
+    </Reveal>
 
-            <ul>
-              {(services ?? []).map((s, i) => (
-                <Reveal as="li" key={s.id} delay={i * 80}>
-                  <div className="group border-t border-border py-9 transition-colors duration-500 last:border-b hover:border-gold">
-                    <div className="flex flex-col gap-5 sm:flex-row sm:items-baseline sm:justify-between">
-                      <div className="max-w-lg">
-                        <div className="flex items-baseline gap-4">
-                          <span className="text-[0.7rem] tracking-[0.24em] text-gold">
-                            {String(i + 1).padStart(2, "0")}
-                          </span>
-                          <h3 className="font-display text-[clamp(1.6rem,3.4vw,2.4rem)] leading-tight transition-transform duration-500 group-hover:translate-x-1">
-                            {s.name}
-                          </h3>
-                        </div>
-                        <p className="mt-3 pl-9 text-sm leading-relaxed text-muted-foreground">
-                          {s.description}
-                        </p>
-                      </div>
-                      <Link
-                        to="/agendar"
-                        search={{ servico: s.id }}
-                        className="ml-9 inline-flex shrink-0 items-center gap-3 text-[0.7rem] tracking-[0.24em] uppercase sm:ml-0"
-                      >
-                        <span className="border-b border-transparent pb-1 transition-colors duration-300 group-hover:border-gold">
-                          Agendar
-                        </span>
-                        <span className="transition-transform duration-500 group-hover:translate-x-1">
-                          →
-                        </span>
-                      </Link>
-                    </div>
-                  </div>
-                </Reveal>
-              ))}
-            </ul>
+    <div className="mt-16 grid gap-px bg-border md:grid-cols-2">
+      {[
+        {
+          title: "Alongamento em gel",
+          text: "Para quem deseja mais comprimento, estrutura e transformação, com uma construção personalizada, elegante e resistente.",
+        },
+        {
+          title: "Banho de gel",
+          text: "Para quem deseja manter o comprimento natural, acrescentando estrutura, resistência e acabamento.",
+        },
+        {
+          title: "Manutenção",
+          text: "Para preservar o equilíbrio, a estrutura e a beleza do alongamento conforme a unha natural cresce.",
+        },
+        {
+          title: "Esmaltação em gel",
+          text: "Disponível como complemento dos procedimentos de alongamento, manutenção e banho de gel.",
+        },
+      ].map((item, i) => (
+        <Reveal key={item.title} delay={i * 80}>
+          <div className="h-full bg-background p-8 md:p-12">
+            <span className="text-[0.7rem] tracking-[0.25em] text-gold">
+              {String(i + 1).padStart(2, "0")}
+            </span>
+
+            <h3 className="mt-6 font-display text-3xl md:text-4xl">
+              {item.title}
+            </h3>
+
+            <p className="mt-5 max-w-md text-sm leading-[1.8] text-muted-foreground">
+              {item.text}
+            </p>
+
+            <Link
+              to="/agendar"
+              className="mt-8 inline-flex border-b border-foreground/30 pb-1 text-[0.7rem] tracking-[0.2em] uppercase"
+            >
+              Conhecer o procedimento
+            </Link>
           </div>
-        </section>
-
+        </Reveal>
+      ))}
+    </div>
+  </div>
+</section>
         {/* ESPECIALIDADE — imagem grande com bloco sobreposto */}
         <section id="especialidade" className="scroll-mt-24 bg-[color-mix(in_oklab,var(--nude)_38%,var(--background))]">
           <div className="mx-auto max-w-[1400px] px-6 py-24 md:px-10 md:py-36">
