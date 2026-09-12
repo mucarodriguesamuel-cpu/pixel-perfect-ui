@@ -358,7 +358,7 @@ function Home() {
             <Reveal>
               <img
                 src={estudioImg}
-                alt="Estúdio de nail design com iluminação suave, mesa de mármore e detalhes dourados"
+               alt="Trabalho de nail design realizado por Débora Tonani"
                 loading="lazy"
                 width={1408}
                 height={1008}
