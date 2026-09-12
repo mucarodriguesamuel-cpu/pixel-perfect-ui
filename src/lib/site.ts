@@ -6,8 +6,8 @@ export const SITE = {
   cityShort: "São Paulo",
   whatsappNumber: "5511930089735",
   whatsappDisplay: "(11) 93008-9735",
-  instagramUrl: "https://www.instagram.com/",
-  instagramLabel: "Instagram",
+instagramUrl: "https://www.instagram.com/unhadegel.sp/",
+instagramLabel: "@unhadegel.sp",
 } as const;
 
 export function whatsappLink(message: string) {
