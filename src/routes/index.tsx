@@ -19,11 +19,11 @@ import p6 from "@/assets/portfolio-6.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Débora Tonani — Nail Designer | Alongamento de unhas em Vila Mariana" },
+      { title: "Débora Tonani — Nail Designer | Alongamento de unhas em Ipiranga" },
       {
         name: "description",
         content:
-          "Alongamentos naturais, banho de gel, manutenção e blindagem com Débora Tonani, nail designer em Vila Mariana, São Paulo, há 16 anos.",
+          "Alongamentos naturais, banho de gel, manutenção e blindagem com Débora Tonani, nail designer em Ipiranga, São Paulo, há 16 anos.",
       },
       {
         property: "og:title",
@@ -32,7 +32,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Beleza sofisticada com acabamento delicado, natural e pensado para valorizar suas mãos. Atendimento em estúdio na Vila Mariana.",
+          "Beleza sofisticada com acabamento delicado, natural e pensado para valorizar suas mãos. Atendimento em estúdio no Ipiranga.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
@@ -158,7 +158,7 @@ function Home() {
                   />
                   <figcaption className="absolute -bottom-4 -left-4 hidden bg-background px-6 py-4 lg:block">
                     <span className="text-[0.65rem] tracking-[0.3em] text-muted-foreground uppercase">
-                      Vila Mariana · São Paulo
+                      Ipiranga · São Paulo
                     </span>
                   </figcaption>
                 </figure>
