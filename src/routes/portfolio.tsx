@@ -42,7 +42,7 @@ const ITENS = [
   { src: p4, alt: "Detalhe macro de unha com acabamento francês champagne", span: "md:col-span-6", h: "md:h-[46vh]" },
   { src: p5, alt: "Unhas nude naturais sobre tricô bege", span: "md:col-span-5", h: "md:h-[62vh]" },
 { src: especialidade, alt: "Aplicação de gel em alongamento de unha", span: "md:col-span-7", h: "md:h-[50vh]" },
-  { src: p6, alt: "Esmalte nude e flores secas sobre mármore claro", span: "md:col-span-7", h: "md:h-[46vh]" },
+ { src: especialidade, alt: "Aplicação de gel em alongamento de unha", span: "md:col-span-7", h: "md:h-[50vh]" },
   { src: p1, alt: "Fita de seda e esmalte nude sobre pedra bege", span: "md:col-span-5", h: "md:h-[58vh]" },
 ];
 
