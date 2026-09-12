@@ -104,24 +104,23 @@ function Home() {
                 <span className="hairline mt-5 w-28" />
               </Reveal>
 
-              <Reveal delay={120}>
-                <h1 className="mt-8 font-display text-[clamp(2.9rem,8.5vw,6.2rem)] leading-[0.98] tracking-[-0.02em]">
-                  Alongamentos
-                  <br />
-                  naturais,{" "}
-                  <em className="text-[color-mix(in_oklab,var(--gold)_78%,var(--espresso))]">
-                    elegantes
-                  </em>
-                  <br />e resistentes.
-                </h1>
-              </Reveal>
+             <Reveal delay={120}>
+  <h1 className="mt-8 font-display text-[clamp(2.9rem,8.5vw,6.2rem)] leading-[0.98] tracking-[-0.02em]">
+    16 anos de técnica.
+    <br />
+    <em className="text-[color-mix(in_oklab,var(--gold)_78%,var(--espresso))]">
+      Naturalidade
+    </em>
+    <br />
+    em cada detalhe.
+  </h1>
+</Reveal>
 
-              <Reveal delay={220}>
-                <p className="mt-8 max-w-md text-[0.98rem] leading-relaxed text-muted-foreground">
-                  Beleza sofisticada com acabamento delicado, natural e pensado para valorizar suas
-                  mãos.
-                </p>
-              </Reveal>
+<Reveal delay={220}>
+  <p className="mt-8 max-w-md text-[0.98rem] leading-relaxed text-muted-foreground">
+    Alongamentos pensados para valorizar suas mãos com aparência natural, acabamento delicado e atendimento personalizado.
+  </p>
+</Reveal>
 
               <Reveal delay={320}>
                 <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
