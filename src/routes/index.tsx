@@ -390,6 +390,60 @@ function Home() {
     </Reveal>
   </div>
 </section>
+        {/* BANHO DE GEL */}
+<section className="bg-sand">
+  <div className="mx-auto grid max-w-[1400px] items-center gap-14 px-6 py-24 md:px-10 md:py-36 lg:grid-cols-2 lg:gap-24">
+    <Reveal>
+      <div>
+        <p className="eyebrow">Banho de gel</p>
+
+        <h2 className="mt-6 font-display text-[clamp(2.5rem,5vw,4.2rem)] leading-[1.03]">
+          Estrutura e cuidado para quem prefere manter o comprimento natural.
+        </h2>
+
+        <div className="mt-9 space-y-6 text-[0.98rem] leading-[1.9] text-muted-foreground">
+          <p>
+            O banho de gel é indicado para mulheres que gostam do comprimento das próprias
+            unhas, mas desejam uma estrutura mais resistente e um acabamento mais uniforme.
+          </p>
+
+          <p>
+            Diferentemente do alongamento, o banho de gel não tem como objetivo criar um
+            novo comprimento. O trabalho é realizado sobre a unha natural, acompanhando
+            seu crescimento e sua rotina.
+          </p>
+
+          <p>
+            É uma escolha para quem deseja manter as próprias unhas e, ao mesmo tempo,
+            ter mais resistência, estrutura e um acabamento bonito e bem cuidado.
+          </p>
+        </div>
+
+        <div className="mt-10 border-t border-border pt-8">
+          <p className="eyebrow">Pode ser interessante para quem</p>
+
+          <div className="mt-6 grid grid-cols-2 gap-x-8 gap-y-5 text-sm">
+            <p>Prefere o comprimento natural</p>
+            <p>Deseja mais resistência</p>
+            <p>Quer deixar as unhas crescerem</p>
+            <p>Busca acabamento uniforme</p>
+            <p>Quer praticidade no dia a dia</p>
+            <p>Prefere uma estética discreta</p>
+          </div>
+        </div>
+      </div>
+    </Reveal>
+
+    <Reveal delay={120}>
+      <img
+        src={p2}
+        alt="Banho de gel realizado por Débora Tonani"
+        loading="lazy"
+        className="h-[55vh] w-full object-cover md:h-[75vh]"
+      />
+    </Reveal>
+  </div>
+</section>
 {/* MISSÃO E VALORES */}
 <section className="border-y border-border bg-background">
   <div className="mx-auto grid max-w-[1200px] gap-12 px-6 py-20 md:grid-cols-2 md:px-10 md:py-28">
