@@ -40,49 +40,7 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-const PILARES = [
-  { title: "Naturalidade" },
-  { title: "Técnica" },
-  { title: "Atendimento personalizado" },
-];
-const DESTAQUES = [
-  {
-    title: "Aparência natural",
-    text: "Alongamentos pensados para valorizar o formato das mãos com resultado delicado.",
-  },
-  {
-    title: "Resistência",
-    text: "Beleza e durabilidade para o dia a dia.",
-  },
-  {
-    title: "Acabamento delicado",
-    text: "Cuidado em cada detalhe para um resultado elegante.",
-  },
-  {
-    title: "Atendimento personalizado",
-    text: "Cada atendimento é pensado para o estilo de cada cliente.",
-  },
-];
 
-const EXPERIENCIA = [
-  "Atendimento personalizado",
-  "Horário agendado",
-  "Ambiente acolhedor",
-  "Atenção aos detalhes",
-];
-const SERVICO_IMAGENS: Record<string, string> = {
-  "Alongamento de unhas": p3,
-  "Banho de gel": p2,
-  "Manutenção": p1,
-  "Blindagem": p5,
-};
-
-const SERVICO_FALLBACK = [
-  { name: "Alongamento de unhas", description: "Resultado natural, resistente e elegante." },
-  { name: "Banho de gel", description: "Proteção e fortalecimento das unhas naturais." },
-  { name: "Manutenção", description: "Cuidado periódico recomendado a cada 25 a 30 dias." },
-  { name: "Blindagem", description: "Proteção e fortalecimento da unha natural." },
-];
 
 function Home() {
 
