@@ -39,11 +39,10 @@ const ITENS = [
   { src: p3, alt: "Alongamento nude com francesinha delicada sobre veludo", span: "md:col-span-5", h: "md:h-[64vh]" },
   { src: p2, alt: "Alongamentos em branco leitoso sobre linho cru", span: "md:col-span-7", h: "md:h-[48vh]" },
   { src: hero, alt: "Mãos com alongamento natural sobre seda champagne", span: "md:col-span-6", h: "md:h-[70vh]" },
-  { src: p4, alt: "Detalhe macro de unha com acabamento francês champagne", span: "md:col-span-6", h: "md:h-[46vh]" },
-  { src: p5, alt: "Unhas nude naturais sobre tricô bege", span: "md:col-span-5", h: "md:h-[62vh]" },
-{ src: especialidade, alt: "Aplicação de gel em alongamento de unha", span: "md:col-span-7", h: "md:h-[50vh]" },
- { src: especialidade, alt: "Aplicação de gel em alongamento de unha", span: "md:col-span-7", h: "md:h-[50vh]" },
-  { src: p1, alt: "Fita de seda e esmalte nude sobre pedra bege", span: "md:col-span-5", h: "md:h-[58vh]" },
+  { src: p4, alt: "Trabalho de unhas com acabamento natural", span: "md:col-span-6", h: "md:h-[46vh]" },
+  { src: p5, alt: "Unhas naturais com acabamento delicado", span: "md:col-span-5", h: "md:h-[62vh]" },
+  { src: p6, alt: "Trabalho de nail design realizado por Débora Tonani", span: "md:col-span-7", h: "md:h-[46vh]" },
+  { src: p1, alt: "Trabalho de unhas com acabamento elegante", span: "md:col-span-5", h: "md:h-[58vh]" },
 ];
 
 function Portfolio() {
