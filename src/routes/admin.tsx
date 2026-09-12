@@ -123,18 +123,24 @@ const [blockTime, setBlockTime] = useState("");
     qc.invalidateQueries({ queryKey: ["appointments"] });
   }
 
-  async function addBlock() {
-    if (!blockDate) return;
-    const { error } = await supabase.from("blocked_slots").insert({ block_date: blockDate });
-    if (error) {
-      toast.error("Este dia já está bloqueado.");
-      return;
-    }
-    setBlockDate("");
-    toast.success("Dia bloqueado.");
-    qc.invalidateQueries({ queryKey: ["blocked_slots"] });
+ async function addBlock() {
+  if (!blockDate) return;
+
+  const { error } = await supabase.from("blocked_slots").insert({
+    block_date: blockDate,
+    block_time: blockTime || null,
+  });
+
+  if (error) {
+    toast.error("Este dia ou horário já está bloqueado.");
+    return;
   }
 
+  setBlockDate("");
+  setBlockTime("");
+  toast.success(blockTime ? "Horário bloqueado." : "Dia bloqueado.");
+  qc.invalidateQueries({ queryKey: ["blocked_slots"] });
+}
   async function removeBlock(id: string) {
     await supabase.from("blocked_slots").delete().eq("id", id);
     qc.invalidateQueries({ queryKey: ["blocked_slots"] });
