@@ -57,7 +57,7 @@ function Portfolio() {
               Trabalhos que falam por si
             </h1>
             <p className="mt-8 max-w-lg text-sm leading-relaxed text-muted-foreground">
-Alongamentos, banho de gel, manutenção e blindagem com acabamento delicado — pensados para
+Alongamentos, banho de gel e manutenção com acabamento delicado — pensados para
 valorizar suas mãos com naturalidade.
             </p>
             <span className="hairline mt-10 w-24" />
