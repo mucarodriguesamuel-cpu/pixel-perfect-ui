@@ -7,8 +7,8 @@ import { useServices } from "@/lib/booking";
 import { SITE } from "@/lib/site";
 
 import heroImg from "@/assets/hero-maos.jpg";
-import especialidadeImg from "@/assets/especialidade.jpg";
-import estudioImg from "@/assets/estudio.jpg";
+import especialidadeImg from "@/assets/portfolio-4.jpg";
+import estudioImg from "@/assets/portfolio-6.jpg";
 import p1 from "@/assets/portfolio-1.jpg";
 import p2 from "@/assets/portfolio-2.jpg";
 import p3 from "@/assets/portfolio-3.jpg";
