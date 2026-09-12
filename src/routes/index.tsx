@@ -790,7 +790,7 @@ function Home() {
             <Reveal>
               <p className="eyebrow">Onde encontrar</p>
               <h2 className="mt-6 font-display text-[clamp(2.1rem,4.6vw,3.4rem)] leading-[1.08]">
-                Vila Mariana,
+                Ipiranga,
                 <br />
                 São Paulo
               </h2>
@@ -810,8 +810,8 @@ function Home() {
             <Reveal delay={150}>
               <div className="h-[38vh] w-full overflow-hidden border border-border md:h-[52vh]">
                 <iframe
-                  title="Mapa da região da Vila Mariana, São Paulo"
-                  src="https://www.google.com/maps?q=Vila%20Mariana%2C%20S%C3%A3o%20Paulo&output=embed"
+               title="Mapa da região do Ipiranga, São Paulo"
+            src="https://www.google.com/maps?q=Ipiranga%2C%20S%C3%A3o%20Paulo&output=embed"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="h-full w-full grayscale-[35%]"
