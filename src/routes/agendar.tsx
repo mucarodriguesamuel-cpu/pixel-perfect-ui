@@ -174,10 +174,11 @@ function Agendar() {
                         <span className="mt-2 block text-sm text-muted-foreground">
                           {s.description}
                         </span>
-                        <span className="mt-4 block text-[0.7rem] tracking-[0.2em] uppercase text-muted-foreground">
-                          {s.duration_minutes} min
-                          {formatPrice(s.price) ? ` · ${formatPrice(s.price)}` : ""}
-                        </span>
+                        {formatPrice(s.price) && (
+  <span className="mt-4 block text-[0.7rem] tracking-[0.2em] uppercase text-muted-foreground">
+    {formatPrice(s.price)}
+  </span>
+)}
                       </button>
                     );
                   })}
