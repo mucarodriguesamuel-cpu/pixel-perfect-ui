@@ -444,24 +444,61 @@ function Home() {
     </Reveal>
   </div>
 </section>
-{/* MISSÃO E VALORES */}
-<section className="border-y border-border bg-background">
-  <div className="mx-auto grid max-w-[1200px] gap-12 px-6 py-20 md:grid-cols-2 md:px-10 md:py-28">
+{/* MANUTENÇÃO */}
+<section className="bg-background">
+  <div className="mx-auto grid max-w-[1400px] items-center gap-14 px-6 py-24 md:px-10 md:py-36 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24">
     <Reveal>
-      <p className="eyebrow">Missão</p>
-      <h2 className="mt-5 font-display text-3xl leading-tight md:text-4xl">
-        Valorizar a beleza das mãos com naturalidade.
-      </h2>
-      <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
-        Unir técnica, resistência e cuidado para criar resultados que respeitem o estilo e a individualidade de cada cliente.
-      </p>
+      <img
+        src={p1}
+        alt="Manutenção de alongamento realizada por Débora Tonani"
+        loading="lazy"
+        className="h-[55vh] w-full object-cover md:h-[72vh]"
+      />
     </Reveal>
 
     <Reveal delay={120}>
-      <p className="eyebrow">Valores</p>
-      <p className="mt-5 font-display text-2xl leading-relaxed">
-        Naturalidade · Técnica · Cuidado · Atenção aos detalhes · Atendimento personalizado
-      </p>
+      <div>
+        <p className="eyebrow">Manutenção</p>
+
+        <h2 className="mt-6 font-display text-[clamp(2.5rem,5vw,4.2rem)] leading-[1.03]">
+          A beleza do alongamento também depende da manutenção correta.
+        </h2>
+
+        <div className="mt-9 space-y-6 text-[0.98rem] leading-[1.9] text-muted-foreground">
+          <p>
+            A manutenção não deve ser vista simplesmente como “refazer a unha”.
+            Conforme a unha natural cresce, toda a estrutura se desloca.
+          </p>
+
+          <p>
+            Por isso, é necessário acompanhar esse crescimento e realizar os ajustes
+            necessários para preservar o equilíbrio da estrutura.
+          </p>
+
+          <p>
+            Durante a manutenção, a unha é preparada novamente e a construção é
+            reorganizada de acordo com o crescimento natural.
+          </p>
+        </div>
+
+        <div className="mt-10 border-t border-border pt-8">
+          <p className="eyebrow">O objetivo é manter</p>
+
+          <div className="mt-6 grid grid-cols-2 gap-5 font-display text-xl">
+            <p>Equilíbrio</p>
+            <p>Resistência</p>
+            <p>Conforto</p>
+            <p>Proporção</p>
+            <p>Acabamento</p>
+            <p>Segurança</p>
+          </div>
+        </div>
+
+        <p className="mt-10 text-sm leading-relaxed text-muted-foreground">
+          A frequência ideal varia de acordo com o crescimento das unhas e com a rotina
+          de cada cliente. Cada cliente recebe orientação conforme a própria necessidade.
+        </p>
+      </div>
     </Reveal>
   </div>
 </section>
