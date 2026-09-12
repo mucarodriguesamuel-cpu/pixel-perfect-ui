@@ -24,7 +24,7 @@ export const Route = createFileRoute("/agendar")({
       {
         name: "description",
         content:
-          "Escolha o serviço, o dia e o horário disponível para o seu atendimento com Débora Tonani, nail designer em Vila Mariana, São Paulo.",
+          "Escolha o serviço, o dia e o horário disponível para o seu atendimento com Débora Tonani, nail designer no Ipiranga, São Paulo.",
       },
       { property: "og:title", content: "Agendar horário — Débora Tonani Nail Designer" },
       {
