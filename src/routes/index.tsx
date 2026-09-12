@@ -20,7 +20,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Alongamentos naturais, banho de gel, manutenção e blindagem com Débora Tonani, nail designer em Ipiranga, São Paulo, há 16 anos.",
+          "Alongamentos naturais, banho de gel, manutenção e esmaltação em gel com Débora Tonani, nail designer no Ipiranga, São Paulo, há 16 anos.",
       },
       {
         property: "og:title",
