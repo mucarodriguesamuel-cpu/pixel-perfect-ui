@@ -3,8 +3,7 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 import { Reveal } from "@/components/site/Reveal";
-import { useServices } from "@/lib/booking";
-import heroImg from "@/assets/hero-maos.jpg";
+import { SITE } from "@/lib/site";
 import especialidadeImg from "@/assets/especialidade.jpg";
 import estudioImg from "@/assets/portfolio-6.jpg";
 import p1 from "@/assets/portfolio-1.jpg";
@@ -87,7 +86,7 @@ const SERVICO_FALLBACK = [
 
 function Home() {
 const { data: services } = useServices();
-
+const { data: services } = useServices();
   return (
     <div className="bg-background">
       <SiteHeader />
