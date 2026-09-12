@@ -58,16 +58,7 @@ export const FALLBACK_SERVICES: Service[] = [
     active: true,
     sort_order: 3,
   },
-    {
-    id: "blindagem",
-    name: "Blindagem",
-    description:
-      "Proteção e fortalecimento da unha natural, mantendo uma aparência delicada e natural.",
-    duration_minutes: 60,
-    price: null,
-    active: true,
-    sort_order: 4,
-  },
+  
 ];
 
 const FALLBACK_SLOTS = ["09:00:00", "10:30:00", "13:30:00", "15:00:00", "16:30:00"];
