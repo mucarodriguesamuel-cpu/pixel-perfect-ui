@@ -58,7 +58,7 @@ export const FALLBACK_SERVICES: Service[] = [
     active: true,
     sort_order: 3,
   },
-  {
+    {
     id: "blindagem",
     name: "Blindagem",
     description:
