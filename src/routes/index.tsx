@@ -606,6 +606,70 @@ function Home() {
     </Reveal>
   </div>
 </section>
+        {/* PARA QUEM + 3 PILARES */}
+<section className="bg-sand">
+  <div className="mx-auto max-w-[1400px] px-6 py-24 md:px-10 md:py-36">
+    <Reveal>
+      <p className="eyebrow">Para quem é o meu trabalho</p>
+
+      <h2 className="mt-6 max-w-4xl font-display text-[clamp(2.5rem,5vw,4.4rem)] leading-[1.03]">
+        Para mulheres que valorizam qualidade nos detalhes.
+      </h2>
+    </Reveal>
+
+    <Reveal delay={120}>
+      <div className="mt-14 grid gap-px bg-border md:grid-cols-2">
+        {[
+          "Valorizam naturalidade",
+          "Gostam de unhas elegantes",
+          "Buscam acabamento refinado",
+          "Não gostam de unhas grossas",
+          "Querem resistência no dia a dia",
+          "Preferem atendimento individualizado",
+          "Valorizam experiência profissional",
+          "Gostam de ambientes tranquilos",
+        ].map((item) => (
+          <div key={item} className="bg-background p-6 md:p-8">
+            <p className="font-display text-xl">{item}</p>
+          </div>
+        ))}
+      </div>
+    </Reveal>
+
+    <Reveal delay={160}>
+      <div className="mt-24">
+        <p className="eyebrow">Os três pilares</p>
+
+        <div className="mt-10 grid gap-10 md:grid-cols-3">
+          <div className="border-t border-gold pt-7">
+            <h3 className="font-display text-3xl">Naturalidade</h3>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              Proporções, formatos e características individuais de cada mão.
+            </p>
+          </div>
+
+          <div className="border-t border-gold pt-7">
+            <h3 className="font-display text-3xl">Resistência</h3>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              Estrutura planejada para oferecer equilíbrio e acompanhar a rotina.
+            </p>
+          </div>
+
+          <div className="border-t border-gold pt-7">
+            <h3 className="font-display text-3xl">Leveza</h3>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              Visual delicado e elegante, sem excesso de espessura.
+            </p>
+          </div>
+        </div>
+
+        <p className="mt-12 font-display text-2xl italic">
+          Tudo isso aliado a 16 anos de experiência.
+        </p>
+      </div>
+    </Reveal>
+  </div>
+</section>
         {/* PORTFÓLIO */}
         <section id="portfolio" className="scroll-mt-24">
           <div className="mx-auto max-w-[1400px] px-6 py-24 md:px-10 md:py-36">
