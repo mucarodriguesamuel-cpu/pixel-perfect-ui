@@ -18,7 +18,7 @@ export const Route = createFileRoute("/portfolio")({
       {
         name: "description",
         content:
-          "Galeria de alongamentos de unhas naturais, banho de gel e esmaltação em gel feitos por Débora Tonani, nail designer em Vila Mariana, São Paulo.",
+          "Galeria de alongamentos de unhas naturais, banho de gel e manutenção feitos por Débora Tonani, nail designer no Ipiranga, São Paulo.",
       },
       { property: "og:title", content: "Portfólio — Débora Tonani Nail Designer" },
       {
