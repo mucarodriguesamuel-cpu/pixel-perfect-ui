@@ -552,6 +552,48 @@ function Home() {
     </Reveal>
   </div>
 </section>
+        {/* CUIDADO COM A UNHA NATURAL */}
+<section className="bg-background">
+  <div className="mx-auto grid max-w-[1200px] gap-14 px-6 py-24 md:px-10 md:py-36 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
+    <Reveal>
+      <div>
+        <p className="eyebrow">Cuidado com a unha natural</p>
+        <h2 className="mt-6 font-display text-[clamp(2.5rem,5vw,4.2rem)] leading-[1.03]">
+          Beleza começa com cuidado.
+        </h2>
+      </div>
+    </Reveal>
+
+    <Reveal delay={120}>
+      <div className="space-y-6 text-[0.98rem] leading-[1.9] text-muted-foreground">
+        <p>
+          A unha natural não deve ser tratada apenas como uma superfície para receber produto.
+          Ela é a base de todo o trabalho.
+        </p>
+
+        <p>
+          Antes de cada procedimento, observo as condições da unha e da região ao redor dela,
+          buscando uma construção que respeite sua estrutura e evite excessos desnecessários.
+        </p>
+
+        <p>
+          Também trabalho com produtos profissionais cuidadosamente selecionados,
+          priorizando qualidade, desempenho e segurança. Quando indicado, são utilizadas
+          opções de produtos hipoalergênicos.
+        </p>
+
+        <p>
+          O cuidado continua depois do atendimento. Cada cliente recebe orientações para
+          preservar o resultado e manter as unhas bonitas e bem cuidadas.
+        </p>
+
+        <blockquote className="mt-10 border-l border-gold pl-7 font-display text-2xl italic leading-relaxed">
+          A unha natural é a base de todo o meu trabalho.
+        </blockquote>
+      </div>
+    </Reveal>
+  </div>
+</section>
         {/* PORTFÓLIO */}
         <section id="portfolio" className="scroll-mt-24">
           <div className="mx-auto max-w-[1400px] px-6 py-24 md:px-10 md:py-36">
