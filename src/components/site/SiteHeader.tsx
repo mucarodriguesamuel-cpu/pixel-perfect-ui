@@ -5,12 +5,12 @@ import { SITE } from "@/lib/site";
 const NAV = [
   { label: "Início", to: "/", hash: "inicio" },
   { label: "Sobre", to: "/", hash: "sobre" },
-  { label: "Serviços", to: "/", hash: "servicos" },
-  { label: "Galeria", to: "/", hash: "galeria" },
-  { label: "Agendamento", to: "/agendar", hash: undefined },
+  { label: "Técnica", to: "/", hash: "tecnica" },
+  { label: "Procedimentos", to: "/", hash: "procedimentos" },
+  { label: "Experiência", to: "/", hash: "experiencia" },
+  { label: "Dúvidas", to: "/", hash: "duvidas" },
   { label: "Contato", to: "/", hash: "contato" },
 ] as const;
-
 export function SiteHeader({ tone = "dark" }: { tone?: "dark" | "light" }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
