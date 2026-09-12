@@ -277,19 +277,27 @@ const [blockTime, setBlockTime] = useState("");
         </div>
 
         <section className="mt-16">
-          <h2 className="eyebrow">Dias bloqueados</h2>
-          <div className="mt-6 flex flex-wrap items-end gap-6">
-            <input
-              type="date"
-              className="field-line max-w-[14rem]"
-              value={blockDate}
-              min={toISODate(new Date())}
-              onChange={(e) => setBlockDate(e.target.value)}
-            />
-            <button className="btn-outline-ink" onClick={addBlock} type="button">
-              Bloquear dia
-            </button>
-          </div>
+        <h2 className="eyebrow">Bloquear agenda</h2>
+<div className="mt-6 flex flex-wrap items-end gap-6">
+  <input
+    type="date"
+    className="field-line max-w-[14rem]"
+    value={blockDate}
+    min={toISODate(new Date())}
+    onChange={(e) => setBlockDate(e.target.value)}
+  />
+
+  <input
+    type="time"
+    className="field-line max-w-[10rem]"
+    value={blockTime}
+    onChange={(e) => setBlockTime(e.target.value)}
+  />
+
+  <button className="btn-outline-ink" onClick={addBlock} type="button">
+    {blockTime ? "Bloquear horário" : "Bloquear dia"}
+  </button>
+</div>
           <div className="mt-6 flex flex-wrap gap-3">
             {blocks.data?.map((b) => (
               <button
