@@ -52,8 +52,8 @@ export const FALLBACK_SERVICES: Service[] = [
     id: "manutencao",
     name: "Manutenção",
     description:
-      "Cuidados para preservar a estrutura e o acabamento. Recomendada, em média, a cada 25 a 30 dias.",
-    duration_minutes: 90,
+"Cuidados para preservar a estrutura e o acabamento conforme a unha natural cresce. A frequência varia de acordo com o crescimento e a rotina de cada cliente.",
+      duration_minutes: 90,
     price: null,
     active: true,
     sort_order: 3,
